@@ -48,10 +48,14 @@ class MainActivity : AppCompatActivity() {
 
             override fun onCardExitTop(dataObject: Any) {
                 Log.e(TAG, "Top Exit")
+
+
             }
 
             override fun onCardExitBottom(dataObject: Any) {
                 Log.e(TAG, "Bottom Exit")
+
+                swipeCardView.restart(4)
             }
         })
     }
